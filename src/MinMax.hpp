@@ -15,7 +15,9 @@ void organizarCrescente(vector<int> vec);
 void organizarDecrescente(vector<int> vec);
 void printarVetor(const vector<int> vec);
 void registrarVetor(const vector<int> vec, const string nomeArquivo);
-
+double MinMax2(const vector<int> vec);
+double MinMax3(const vector<int> vec);
+double Media(const vector<int> vec,int opcao);
 
 
 
