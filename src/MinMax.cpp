@@ -51,13 +51,13 @@ void registrarVetor(const vector<int> vec, const string nomeArquivo){
             tempo_execucao1 = Media(vec,1);
             tempo_execucao2 = Media(vec,2);
             tempo_execucao3 = Media(vec,3);
-            arquivo << "Tempo de Execução Médio MINMAX[1] : " << tempo_execucao1 << endl; 
-            arquivo << "Tempo de Execução Médio MINMAX[2] : " << tempo_execucao2 << endl; 
-            arquivo << "Tempo de Execução Médio MINMAX[3] : " << tempo_execucao3 << endl;
+            arquivo << "Tempo de médio de execução MINMAX[1] : " << tempo_execucao1 << endl; 
+            arquivo << "Tempo de médio de execução MINMAX[2] : " << tempo_execucao2 << endl; 
+            arquivo << "Tempo de médio de execução MINMAX[3] : " << tempo_execucao3 << endl;
         }
         arquivo << endl;
         arquivo.close();
-        cout << "Vetor e tempo de execução registrados com sucesso no arquivo." << endl;
+        cout << "O Vetor e o Tempo de execução foram registrados com sucesso no arquivo." << endl;
     }
 }
 
