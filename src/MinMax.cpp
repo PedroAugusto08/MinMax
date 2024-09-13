@@ -40,13 +40,13 @@ void registrarVetor(const vector<int> vec, const string nomeArquivo){
         organizarCrescente(vec);
         for(int a=0;a<3;a++){
             if(a==0){   
-                arquivo << endl << "VETOR NA ORDEM ALEATÓRIA" << endl;
+                arquivo << endl << "Vetor em ordem aleatória" << endl;
             } else if (a==1){
                 organizarCrescente(vec);
-                arquivo << endl << "VETOR NA ORDEM CRESCENTE" << endl;
+                arquivo << endl << "Vetor na ordem crescente" << endl;
             } else if(a==2){
                 organizarDecrescente(vec);
-                arquivo << endl << "VETOR NA ORDEM DECRESCENTE" << endl;
+                arquivo << endl << "Vetor na ordem decrescente" << endl;
             }
             tempo_execucao1 = Media(vec,1);
             tempo_execucao2 = Media(vec,2);
@@ -72,9 +72,9 @@ double MinMax1(const vector<int> vec){
             Min = vec[i];
     }
     clock_t fim = clock();
-    cout << endl << endl << "MAX:" << Max << " MIN:" << Min << endl << endl;
+    cout << endl << endl << "Max:" << Max << " Min:" << Min << endl << endl;
     double tempo_execucao = (double)(fim - inicio) / CLOCKS_PER_SEC;
-    cout << "Tempo de execução: " << tempo_execucao << " segundos." << endl;
+    cout << "Tempo: " << tempo_execucao << " segundos." << endl;
     return tempo_execucao;
 }
 
@@ -89,9 +89,9 @@ double MinMax2(const vector<int> vec){
             Min = vec[i];
     }
     clock_t fim = clock();
-    cout << endl << endl << "MAX:" << Max << " MIN:" << Min << endl << endl;
+    cout << endl << endl << "Max:" << Max << " Min:" << Min << endl << endl;
     double tempo_execucao = (double)(fim - inicio) / CLOCKS_PER_SEC;
-    cout << "Tempo de execução: " << tempo_execucao << " segundos." << endl;
+    cout << "Tempo: " << tempo_execucao << " segundos." << endl;
     return tempo_execucao;
 }
 
@@ -121,9 +121,9 @@ double MinMax3(const vector<int> vec){
         }
     }
     clock_t fim = clock();
-    cout << endl << endl << "MAX:" << Max << " MIN:" << Min << endl << endl;
+    cout << endl << endl << "Max:" << Max << " Min:" << Min << endl << endl;
     double tempo_execucao = (double)(fim - inicio) / CLOCKS_PER_SEC;
-    cout << "Tempo de execução: " << tempo_execucao << " segundos." << endl;
+    cout << "Tempo: " << tempo_execucao << " segundos." << endl;
     return tempo_execucao;
 }
 
